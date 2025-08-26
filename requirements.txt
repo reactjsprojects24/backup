@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard] 
+python-multipart # Required for file uploads
+streamlit # For the web interface
+
+fastapi-users[sqlalchemy] # For user management

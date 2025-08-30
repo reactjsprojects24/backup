@@ -1,0 +1,187 @@
+.table-container {
+  width: 100%;
+  height: 409px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  overflow: auto;
+
+  box-shadow:
+    0px 1.97px 6.47px 0px rgba(0, 0, 0, 0.05),
+    0px 9px 18.2px 0px rgba(0, 0, 0, 0.08),
+    0px 22.78px 48.83px 0px rgba(0, 0, 0, 0.1),
+    0px 45px 112px 0px rgba(0, 0, 0, 0.15);
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+}
+
+thead {
+  background-color: rgb(242, 242, 242);
+  height: 40px;
+}
+
+.table-header-cell {
+  color: #000;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
+  padding: 10px;
+}
+
+.table-body-cell {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  vertical-align: middle;
+  height: 60px;
+  padding: 10px;
+}
+
+.audio-cell {
+  color: red;
+  text-decoration: underline;
+}
+
+.play-button {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+/* .play-button,
+.action-button {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+} */
+
+.play-button {
+  background-color: #AF1E22;
+  color: white;
+}
+
+.play-button:hover {
+  background-color: #d6898c;
+  border-radius: 25px;
+}
+
+/* .action-button {
+  background-color: #FF5B00;
+  color: white;
+} */
+
+/* .action-button:hover {
+  background-color: #AF1E22;
+} */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #AF1E22;
+}
+
+.icon-button:hover {
+  color: #AF1E22;
+}
+
+/* Audio Player */
+.audio-player-popup {
+  background: #f5f5f5;
+  padding: 10px 16px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 12px auto;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+.audio-control-button {
+  background-color: #a82828;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.waveform {
+  flex: 1;
+  height: 48px;
+  min-width: 200px;
+}
+
+.audio-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #444;
+}
+
+.audio-duration {
+  font-size: 13px;
+  color: #555;
+}
+
+.volume-icon {
+  font-size: 16px;
+  color: #555;
+}
+
+.audio-player-popup {
+  background: #f5f5f5;
+  padding: 20px 24px 12px 16px; /* top-right-bottom-left */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 90%;                  /* ✅ wider box */
+  max-width: 800px;
+  margin: 12px auto;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  position: relative;          /* ✅ for absolute close button */
+}
+
+.audio-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #a82828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.audio-close-button:hover {
+  background: #fdd;
+}
